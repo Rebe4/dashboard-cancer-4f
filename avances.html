@@ -1,0 +1,115 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avances tecnológicos e innovadores</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="inicio.html" class="btn btn-this">Inicio</a>
+        <a href="datos.html" class="btn btn-alt">Datos</a>
+        <a href="tratamiento.html" class="btn btn-alt">Tipos de tratamiento</a>
+        <a href="#" class="btn btn-alt">Avances tecnológicos</a>
+        <a href="informacion.html" class="btn btn-alt">Información</a>
+    </nav>
+
+    <div class="grafica-container">
+        <h2 style="text-align: center">La tecnología que revoluciona la investigación y el tratamiento del cáncer</h2>
+        <div id="chartA" class="grafica-avances">
+            <script src="avances.js"></script>
+        </div>
+    </div>
+
+    <div class="avances-boxes">
+        <!-- CRISPR -->
+        <div class="avance-box">
+            <h3>CRISPR</h3>
+            <p>Revolución en la edición de genes.</p>
+            <button class="info-btn crispr">ℹ️</button>
+            <div class="tooltip">
+                <p>CRISPR permite modificar el ADN con precisión, revolucionando el tratamiento del cáncer y otros
+                    campos.</p>
+            </div>
+        </div>
+
+        <!-- Inteligencia Artificial -->
+        <div class="avance-box">
+            <h3>Inteligencia Artificial</h3>
+            <p>Mejora el diagnóstico y la medicina de precisión.</p>
+            <button class="info-btn ia">ℹ️</button>
+            <div class="tooltip">
+                <p>La IA analiza grandes datos, crea gemelos digitales y optimiza tratamientos oncológicos.</p>
+            </div>
+        </div>
+
+        <!-- Telemedicina -->
+        <div class="avance-box">
+            <h3>Telemedicina</h3>
+            <p>Atención médica a distancia.</p>
+            <button class="info-btn tm">ℹ️</button>
+            <div class="tooltip">
+                <p>Facilita consultas, tratamientos y estudios clínicos para pacientes en ubicaciones remotas.</p>
+            </div>
+        </div>
+
+        <!-- Criomicroscopia Electrónica -->
+        <div class="avance-box">
+            <h3>Criomicroscopia Electrónica</h3>
+            <p>Imágenes moleculares de alta resolución.</p>
+            <button class="info-btn ce">ℹ️</button>
+            <div class="tooltip">
+                <p>Permite estudiar moléculas y mejorar el diseño de tratamientos contra el cáncer.</p>
+            </div>
+        </div>
+
+        <!-- Infinium -->
+        <div class="avance-box">
+            <h3>Infinium</h3>
+            <p>Datos genéticos en investigación oncológica.</p>
+            <button class="info-btn i">ℹ️</button>
+            <div class="tooltip">
+                <p>Analiza cambios genéticos para mapear el cáncer y predecir riesgos.</p>
+            </div>
+        </div>
+
+        <!-- Cirugía Robótica -->
+        <div class="avance-box">
+            <h3>Cirugía Robótica</h3>
+            <p>Cirugía precisa y mínimamente invasiva.</p>
+            <button class="info-btn cr">ℹ️</button>
+            <div class="tooltip">
+                <p>Brazos robóticos mejoran la precisión, reducen el dolor y aceleran la recuperación.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.info-btn').forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.nextElementSibling.style.display = 'block';
+            });
+            button.addEventListener('mouseout', () => {
+                button.nextElementSibling.style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+
+<footer class="footer">
+    <div class="footer-content">
+        <a href="https://www.who.int" target="_blank">Organización Mundial de la Salud (OMS)</a>
+        <a href="https://www.aecc.es" target="_blank">Asociación Española Contra el Cáncer (AECC)</a>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-credits">
+            Desarrollado por <a href="mailto:rebecalleja412@gmail.com">Rebeca</a>
+        </p>
+        <p class="footer-derechos">&copy; 2024 Todos los derechos reservados.</p>
+    </div>
+</footer>
